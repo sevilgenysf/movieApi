@@ -20,7 +20,7 @@ function App() {
 	return (
 		<div className="App">
 			{movies.length > 0 &&
-				movies.map((movie) => <Movie {...movie} key={movie.id} />)}
+				movies.map((movie) => <Movie data={movie} key={movie.id} />)}
 		</div>
 	);
 }
