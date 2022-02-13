@@ -55,8 +55,6 @@ header {
 }
 
 .movie img {
-	object-fit: cover;
-	height: 400px;
 	max-width: 100%;
 }
 
@@ -94,17 +92,17 @@ header {
 	background-color: #22254b;
 	padding: 0.5rem;
 	border-radius: 5px;
-	font-weight: bold;
+	font-size: bold;
 }
 
 .tag.green {
 	color: green;
 }
 
-.tag.orange {
+.tag.green {
 	color: orange;
 }
 
-.tag.red {
+.tag.green {
 	color: red;
 }

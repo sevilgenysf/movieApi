@@ -27,6 +27,12 @@ function App() {
 		e.preventDefault();
 		if (searchTerm) {
 			getMovies(SEARCH_API + searchTerm);
+			fetch()
+				.then((res) => res.json())
+				.then((data) => {
+					console.log(data);
+					setMovies(data.results);
+				});
 			setSearchTerm('');
 		}
 	};

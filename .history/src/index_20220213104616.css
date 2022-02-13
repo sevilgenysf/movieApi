@@ -32,7 +32,7 @@ header {
 	border-radius: 10px;
 }
 
-.search:focus {
+.search:active {
 	outline: 0;
 }
 
@@ -55,8 +55,6 @@ header {
 }
 
 .movie img {
-	object-fit: cover;
-	height: 400px;
 	max-width: 100%;
 }
 
@@ -88,23 +86,4 @@ header {
 
 .movie:hover .movie-over{
 	transform: translateY(0%);
-}
-
-.tag {
-	background-color: #22254b;
-	padding: 0.5rem;
-	border-radius: 5px;
-	font-weight: bold;
-}
-
-.tag.green {
-	color: green;
-}
-
-.tag.orange {
-	color: orange;
-}
-
-.tag.red {
-	color: red;
 }

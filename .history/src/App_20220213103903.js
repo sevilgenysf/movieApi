@@ -11,28 +11,16 @@ function App() {
 	const [searchTerm, setSearchTerm] = useState('');
 
 	useEffect(() => {
-		getMovies(FEATURED_API_URL);
-	}, []);
-
-	const getMovies = (API) => {
-		fetch(API)
+		fetch(FEATURED_API_URL)
 			.then((res) => res.json())
 			.then((data) => {
 				console.log(data);
 				setMovies(data.results);
 			});
-	};
+	}, []);
 
 	const handleOnSubmit = (e) => {
 		e.preventDefault();
-		if (searchTerm) {
-			getMovies(SEARCH_API + searchTerm);
-			setSearchTerm('');
-		}
-	};
-
-	const handleOnChange = (e) => {
-		setSearchTerm(e.target.value);
 	};
 
 	return (
