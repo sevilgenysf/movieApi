@@ -24,7 +24,7 @@ header {
 
 .search {
 	font-family: 'Courier New', Courier, monospace;
-	width: 300px;
+	width: 100%;
 	font-weight: 900;
 	border: 1px solid #74747d;
 	background-color: transparent;
